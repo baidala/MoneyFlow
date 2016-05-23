@@ -21,13 +21,6 @@ public class MyContentProvider extends ContentProvider {
     private static final int URI_CODE_EXPENSE = 1;
 
     static {
-        uriMatcher.addURI(Prefs.URI_EXPENSES_AUTHORITIES,
-                Prefs.URI_EXPENSES_TYPE,
-                URI_CODE_EXPENSES);
-    }
-
-
-    static {
         uriMatcher.addURI(Prefs.URI_AUTHORITIES, Prefs.URI_TYPE_EXPENSE, URI_CODE_EXPENSE);
     }
 
